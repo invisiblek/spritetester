@@ -41,7 +41,6 @@ function draw() {
   for (y = 0; y < 8; y++) {
     for (x = 0; x < 7; x++) {
       ctx.fillStyle=getColor(sprite[i]);
-      console.log(getColor(sprite[i]));
       i++;
       ctx.fillRect(x * 10 + 3, y * 10 + 3, 8, 8);
       ctx.stroke();
@@ -50,7 +49,6 @@ function draw() {
 }
 
 function getColor(c) {
-console.log(c);
   switch(c) {
     case "0" : return "rgba(0, 0, 0, 1)";
     case "1" : return "rgba(255, 255, 255, 1)";
